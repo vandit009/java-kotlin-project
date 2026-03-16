@@ -2,7 +2,7 @@ import java.util.concurrent.ConcurrentHashMap
 
 class SimpleCache<K, V> {
     private val cache = ConcurrentHashMap<K, CacheEntry<V>>();
-    private val ttlMs = 60000 // 1 minute
+    private val ttlMs = 60000 //  1 minute
 
     data class CacheEntry<V>(val value: V, val timestamp: Long)
 
